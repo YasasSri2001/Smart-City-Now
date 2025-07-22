@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartCityNow - Solutions</title>
+  <link rel="stylesheet" href="solutions.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <!-- Floating Action Button -->
+  <div class="fab">
+    <i class="fas fa-lightbulb"></i>
+    <span>Suggest Idea</span>
+  </div>
+
+  <!-- Primary Navbar -->
+  <header class="hero">
+  <div class="navbar">
+    <div class="nav-links">
+      <a href="mainpage.html">Home</a>
+      <a href="detailpage.html">About</a>
+      <a href="conta.html">Contact</a>
+      <a href="servicse.html">Services</a>
+      <a href="solutions.html" class="nav-link">Solutions</a>
+      <a href="event.html" class="nav-link">Events</a>
+      <a href="feedback.html" class="nav-link">Feedback</a>
+    </div>
+    <div class="nav-icons">
+      <a href="login.html" class="icon"><img src="./photos/user-login-icon-14.png" alt="Login"></a>
+      <a href="cal.html" class="icon2"><img src="./photos/cal.png" alt="Calendar"></a>
+    </div>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./photos/Factory-to-consumer-1-1.jpg');">
+    <div class="hero-content-box">
+  <div class="hero-box">
+    <h1><span class="gradient-text">Smart Solutions</span> <i class="fas fa-lightbulb"></i></h1>
+    <p class="hero-subtitle">Innovative approaches to tackle urban challenges and build a sustainable future</p>
+    
+    <div class="stats-container">
+      <div class="stat-box">
+        <div class="stat-number">24+</div>
+        <div class="stat-label">Active Projects</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">15k+</div>
+        <div class="stat-label">Citizens Engaged</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">85%</div>
+        <div class="stat-label">Success Rate</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- Secondary Navbar -->
+  <nav class="secondary-nav">
+    <div class="container">
+      <a href=" " class="active"><i class="fas fa-trash"></i> Waste</a>
+      <a href=" "><i class="fas fa-wind"></i> Air Quality</a>
+      <a href=" "><i class="fas fa-traffic-light"></i> Mobility</a>
+      <a href=" "><i class="fas fa-bolt"></i> Energy</a>
+      <a href=" "><i class="fas fa-users"></i> Community</a>
+    </div>
+  </nav>
+
+  <!-- Smart Solutions Cards -->
+  <main class="content">
+    <section id="waste-solutions" class="solution-section">
+      <div class="section-header">
+        <h2><i class="fas fa-trash"></i> Waste Management Solutions</h2>
+        <p>Innovative approaches to reduce garbage and improve recycling</p>
+      </div>
+      <div class="grid-3">
+        <div class="card waste-card">
+          <div class="card-icon">
+            <i class="fas fa-recycle"></i>
+          </div>
+          <h3>Smart Waste Sorting</h3>
+          <p>AI-powered waste stations that automatically sort recyclables from general waste with 95% accuracy.</p>
+          <a href="#" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="card waste-card">
+          <div class="card-icon">
+            <i class="fas fa-solar-panel"></i>
+          </div>
+          <h3>Solar Compactor Bins</h3>
+          <p>Self-compacting bins that reduce collection frequency by 70% through solar-powered compaction.</p>
+          <a href="#" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="card waste-card">
+          <div class="card-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Community Composting</h3>
+          <p>Neighborhood composting hubs that convert organic waste into fertilizer for urban gardens.</p>
+          <a href="commiunity.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="air-solutions" class="solution-section">
+      <div class="section-header">
+        <h2><i class="fas fa-wind"></i> Air Quality Solutions</h2>
+        <p>Technologies to monitor and improve urban air quality</p>
+      </div>
+      <div class="grid-3">
+        <div class="card air-card">
+          <div class="card-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3>Real-time Air Monitoring</h3>
+          <p>Network of 50+ sensors providing live air quality data across the city with public alerts.</p>
+          <a href="#" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="card air-card">
+          <div class="card-icon">
+            <i class="fas fa-tree"></i>
+          </div>
+          <h3>Urban Green Walls</h3>
+          <p>Vertical gardens on buildings that filter pollutants and reduce urban heat island effect.</p>
+          <a href="#" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="card air-card">
+          <div class="card-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3>Low-Emission Zones</h3>
+          <p>Smart traffic management to reduce vehicle emissions in sensitive urban areas.</p>
+          <a href="#" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Map -->
+    <section class="map-section">
+      <div class="section-header">
+        <h2><i class="fas fa-map-marked-alt"></i> Solution Deployment Map</h2>
+        <p>Explore where smart solutions are being implemented across our city</p>
+      </div>
+      <div id="solutionMap"></div>
+      <div class="map-legend">
+        <div class="legend-item"><span class="legend-color waste"></span> Waste Solutions</div>
+        <div class="legend-item"><span class="legend-color air"></span> Air Quality</div>
+        <div class="legend-item"><span class="legend-color mobility"></span> Mobility</div>
+        <div class="legend-item"><span class="legend-color energy"></span> Energy</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>SmartCityNow</h3>
+        <p>Building sustainable urban solutions through innovation and community engagement.</p>
+        <div class="social-links">
+          <a href="https://web.facebook.com"><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="detailpage.html">About Us</a></li>
+          <li><a href="servicse.html">Projects</a></li>
+          <li><a href="conta.html">Get Involved</a></li>
+          <li><a href="Donation.html">Resources</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><i class="fas fa-envelope"></i> udulamadawala789@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +94 742315794</p>
+        <p><i class="fas fa-map-marker-alt"></i> Kalapitiya</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SmartCityNow.Create by Udula Madawala </p>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('solutionMap').setView([7.0955, 80.6238], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Custom icons
+    const wasteIcon = L.divIcon({
+      className: 'custom-marker waste-marker',
+      html: '<i class="fas fa-trash"></i>',
+      iconSize: [30, 30]
+    });
+    
+    const airIcon = L.divIcon({
+      className: 'custom-marker air-marker',
+      html: '<i class="fas fa-wind"></i>',
+      iconSize: [30, 30]
+    });
+
+    const mobilityIcon = L.divIcon({
+      className: 'custom-marker mobility-marker',
+      html: '<i class="fas fa-traffic-light"></i>',
+      iconSize: [30, 30]
+    });
+
+    const energyIcon = L.divIcon({
+      className: 'custom-marker energy-marker',
+      html: '<i class="fas fa-bolt"></i>',
+      iconSize: [30, 30]
+    });
+
+    // Markers
+    L.marker([7.0925, 80.6278], {icon: energyIcon}).addTo(map)
+      .bindPopup('<b>Smart Energy Hub</b><br>Solar-powered community energy center');
+    
+    L.marker([7.0890, 80.6201], {icon: airIcon}).addTo(map)
+      .bindPopup('<b>Air Quality Station #1</b><br>Real-time PM2.5 monitoring');
+    
+    L.marker([7.0972, 80.6312], {icon: wasteIcon}).addTo(map)
+      .bindPopup('<b>Waste-to-Energy Plant</b><br>Converting 5 tons of waste daily');
+    
+    L.marker([7.0935, 80.6250], {icon: airIcon}).addTo(map)
+      .bindPopup('<b>Air Quality Station #2</b><br>Near school zone');
+    
+    L.marker([7.0900, 80.6180], {icon: wasteIcon}).addTo(map)
+      .bindPopup('<b>Smart Recycling Center</b><br>24/7 automated waste sorting');
+    
+    L.marker([7.0990, 80.6350], {icon: mobilityIcon}).addTo(map)
+      .bindPopup('<b>Smart Traffic Corridor</b><br>AI-optimized traffic flow');
+    
+    L.marker([7.0850, 80.6150], {icon: mobilityIcon}).addTo(map)
+      .bindPopup('<b>Community Transport Hub</b><br>Integrated mobility solutions');
+  </script>
+</body>
+</html>

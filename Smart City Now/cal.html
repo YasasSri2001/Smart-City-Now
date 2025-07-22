@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Calculator</title>
+  <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <a href="mainpage.html">Home</a>
+      <a href="detailpage.html">About</a>
+      <a href="conta.html">Contact</a>
+      <a href="Price.HTML">Details</a>
+      <a href="servicse.html">Services</a>
+      <a href="solutions.html" class="nav-link">Solutions</a>
+      <a href="event.html" class="nav-link">Events</a>
+      <a href="feedback.html" class="nav-link">Feedback</a>
+
+
+      <div class="icon">
+        <a href="login.html"><img src="https://i.pinimg.com/564x/e2/7c/87/e27c8735da98ec6ccdcf12e258b26475.jpg"
+            alt="Login"></a>
+      </div>
+
+      <div class="icon2">
+        <a href="cal.html"><img src=".//photos/cal.png" alt="cal"></a>
+      </div>
+    </div>
+
+  </header>
+
+
+  <h1>Carbon Calculator</h1>
+  <form class="carbonCalculator">
+    <label for="milesDriven">Miles Driven per Year:</label>
+    <input type="number" id="milesDriven" min="0" required><br>
+    <label for="mpg">Average MPG (Miles per Gallon):</label>
+    <input type="number" id="mpg" min="0" required><br>
+    <label for="electricity">Electricity Usage (kWh per Month):</label>
+    <input type="number" id="electricity" min="0" required><br>
+    <label for="gas">Natural Gas Usage (Therms per Month):</label>
+    <input type="number" id="gas" min="0" required><br>
+    <button type="button" onclick="calculateCarbon()">Calculate</button>
+  </form>
+  <div id="result"></div>
+
+  <script>
+    function calculateCarbon() {
+      var milesDriven = parseFloat(document.getElementById('milesDriven').value);
+      var mpg = parseFloat(document.getElementById('mpg').value);
+      var electricity = parseFloat(document.getElementById('electricity').value);
+      var gas = parseFloat(document.getElementById('gas').value);
+
+
+      var carEmissions = (milesDriven / mpg) * 19.6;
+      var electricityEmissions = electricity * 0.92;
+      var gasEmissions = gas * 11.7;
+
+      var totalEmissions = carEmissions + electricityEmissions + gasEmissions;
+
+      document.getElementById('result').innerHTML = "Your yearly carbon footprint is: " + totalEmissions.toFixed(2) + " metric tons CO2e";
+    }
+  </script>
+</body>
+
+</html>

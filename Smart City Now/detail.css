@@ -1,0 +1,90 @@
+.post{
+    min-height: 100vh;
+    background-color: rgb(8, 9, 10);
+
+}
+
+.post .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12rem 0;
+
+}
+
+.post .box-container .box{
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(11px);
+    box-shadow: 0 20px 50px rgba(255,255,255,0.04);
+    margin: 0rem 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.post .box-container .box img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.post .box-container .box .content{
+    padding: 1rem;
+}
+
+.post .box-container .box .content span{
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.post .box-container .box .content span i{
+    padding: 1rem 0;
+    color: crimson;
+    margin-right: .5rem;
+
+}
+
+.post .box-container .box .content h3{
+    margin: .5rem;
+    font-size: 2.4rem;
+    color:#333;
+}
+
+.post .box-container .box .content:hover h3{
+    text-decoration: underline;
+    color: crimson;
+}
+
+.post .box-container .box .content p{
+    color: #666;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.btnRM{
+    background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.btnRM{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+}
+  
+.btnRM:hover {
+    background-color: #04AA6D;
+    color: white;
+}

@@ -1,0 +1,174 @@
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(11px);
+    box-shadow: 0 20px 50px rgba(255,255,255,0.04);
+    margin: 0rem 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-left: 500px;
+   
+   
+    
+}
+
+body{
+    background-color: rgb(8, 9, 10);
+   
+
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.topic{
+    font-size: 3rem;
+    color: #76a713;
+    text-align: center;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.classification {
+    margin-top: 20px;
+}
+
+.classification h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.classification p {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.classification ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.classification ul li {
+    margin-bottom: 5px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.classification ul li:hover {
+    color: #007bff;
+}
+
+.image {
+    width: 200px;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* start join us css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.rounded-box {
+    border-radius: 10px;
+    border: 2px solid #007bff;
+    padding: 20px;
+    transition: all 0.3s ease; 
+    
+}
+
+.rounded-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+p {
+    margin: 0; 
+}
+
+
+
+
+
+

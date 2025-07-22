@@ -1,0 +1,154 @@
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(11px);
+    box-shadow: 0 20px 50px rgba(255,255,255,0.04);
+    margin: 0rem 1.5rem;
+    padding: 1rem;
+    border-radius: 10px; 
+    margin-left: 520px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;  
+}
+
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.topic{
+    font-size: 3rem;
+    color: #76a713;
+    text-align: center;
+    
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.classification {
+    margin-top: 20px;
+}
+
+.classification h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.classification p {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.classification ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.classification ul li {
+    margin-bottom: 5px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.classification ul li:hover {
+    color: #007bff;
+}
+
+.image {
+    width: 200px;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+ 
+.content-box h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+ 
+.content-box h3 {
+    margin-top: 0;
+    color: #666;
+}
+
+ 
+.content-box p {
+    line-height: 1.6;
+    color: #555;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+  
+.content-box {
+  animation: fadeIn 0.5s ease-out;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart City Events</title>
+  <link rel="stylesheet" href="event.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+  <header class="hero" style="background-image: url('./photos/istockphoto-1372971598-612x612.jpg');">
+    <div class="navbar">
+      <div class="nav-links">
+        <a href="mainpage.html">Home</a>
+        <a href="detailpage.html">About</a>
+        <a href="conta.html">Contact</a>
+        <a href="servicse.html">Services</a>
+        <a href="solutions.html" class="nav-link">Solutions</a>
+        <a href="event.html" class="nav-link">Events</a>
+        <a href="feedback.html" class="nav-link">Feedback</a>
+      </div>
+      <div class="nav-icons">
+        <a href="login.html" class="icon"><img src="./photos/user-login-icon-14.png" alt="Login"></a>
+        <a href="cal.html" class="icon2"><img src="./photos/cal.png" alt="Calendar"></a>
+      </div>
+    </div>
+    <div class="hero-box">
+      <div class="hero-content">
+        <i class="fas fa-globe" style="color: white;"></i>
+        <h1> 🌱 Smart City Events</h1>
+        <p>Discover the latest innovations shaping urban living</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="event-container">
+    <section class="event-section">
+      <h2 class="section-title">Upcoming Events</h2>
+
+      <div class="event-grid">
+        <div class="event-card">
+          <div class="event-icon">🚦</div>
+          <h3>Smart Traffic Innovations</h3>
+          <p>Discover how AI-powered traffic lights, real-time congestion monitoring, and adaptive signaling systems are
+            improving mobility in modern cities.</p>
+          <div class="event-date">May 15, 2025 | City Hall</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-icon">🏗</div>
+          <h3>Intelligent Infrastructure</h3>
+          <p>Smart buildings, sensor-equipped roads, and automated maintenance systems are transforming city
+            infrastructure.</p>
+          <div class="event-date">June 2, 2025 | Tech Center</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-icon">🗑</div>
+          <h3>Smart Waste Management</h3>
+          <p>Learn how IoT-enabled bins and data analytics help cities manage waste more effectively.</p>
+          <div class="event-date">June 10, 2025 | Green Hub</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-icon">☀</div>
+          <h3>Sustainable Energy Projects</h3>
+          <p>From solar-powered street lighting to urban wind farms, cities are adopting cleaner energy sources.</p>
+          <div class="event-date">June 18, 2025 | Energy Park</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-icon">🌱</div>
+          <h3>Urban Agriculture</h3>
+          <p>Discover how cities are turning rooftops and walls into productive farms with smart agriculture tech.</p>
+          <div class="event-date">July 5, 2025 | Urban Farm</div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-icon">🌃</div>
+          <h3>Night-time Solutions</h3>
+          <p>Explore how smart lighting and adaptive security systems make cities safer and more energy-efficient at
+            night.</p>
+          <div class="event-date">July 12, 2025 | Innovation Lab</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event-section">
+      <h2 class="section-title">Special Events</h2>
+
+      <div class="event-grid">
+        <div class="event-card highlight">
+          <div class="event-icon">🚗</div>
+          <h3>Smart Mobility Challenge</h3>
+          <p>A city-wide competition for smart mobility solutions that improve daily commuting and reduce carbon
+            emissions.</p>
+          <div class="event-date">August 8, 2025 | Downtown</div>
+        </div>
+
+        <div class="event-card highlight">
+          <div class="event-icon">🔍</div>
+          <h3>Smart Tech Treasure Hunt</h3>
+          <p>A fun event where participants solve clues leading to key smart city locations while learning about urban
+            tech.</p>
+          <div class="event-date">August 15, 2025 | Citywide</div>
+        </div>
+
+        <div class="event-card highlight">
+          <div class="event-icon">🛠</div>
+          <h3>Green Innovation Workshops</h3>
+          <p>Hands-on workshops teaching about smart home tech and energy-efficient solutions for urban living.</p>
+          <div class="event-date">September 3, 2025 | Community Center</div>
+        </div>
+
+        <div class="event-card highlight">
+          <div class="event-icon">🧹</div>
+          <h3>Smart Community Clean-Up</h3>
+          <p>A tech-assisted volunteer event using smart tracking apps to coordinate teams cleaning public spaces.</p>
+          <div class="event-date">September 10, 2025 | Various Locations</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <h2 class="section-title">Event Locations</h2>
+      <div id="eventMap"></div>
+      <div class="map-legend">
+        <div><span class="legend-icon">📍</span> Event Locations</div>
+        <div><span class="legend-icon">🏢</span> Venues</div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 Smart City Events. Create by Udula Madawala</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // Wait for DOM to load
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize the map
+      const map = L.map('eventMap', {
+        zoomControl: false
+      }).setView([7.0955, 80.6238], 14); // Slightly higher zoom level
+
+      // Add OpenStreetMap tiles
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      // Add zoom control with better position
+      L.control.zoom({
+        position: 'topright'
+      }).addTo(map);
+
+      // Custom icons
+      const eventIcon = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32]
+      });
+
+      const venueIcon = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/2776/2776067.png',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32]
+      });
+
+      // Add markers for event locations
+      L.marker([7.0985, 80.6210], { icon: eventIcon }).addTo(map)
+        .bindPopup('<b>🌱 Mahaweli Tree Planting Park</b><br>June 20, 2024<br><em>Tree planting day with live music</em>')
+        .openPopup();
+
+      L.marker([7.0910, 80.6305], { icon: venueIcon }).addTo(map)
+        .bindPopup('<b>🚀 Kotmale SmartCity Expo</b><br>July 15, 2024<br><em>Tech showcase and demos</em>');
+
+      L.marker([7.1002, 80.6150], { icon: venueIcon }).addTo(map)
+        .bindPopup('<b>💻 Urban Innovation Lab</b><br>June 3, 2024<br><em>Workshop on smart city tech</em>');
+
+      L.marker([7.0960, 80.6250], { icon: eventIcon }).addTo(map)
+        .bindPopup('<b>🧹 Town Clean-Up</b><br>May 10, 2024<br><em>Community clean-up event</em>');
+
+      // Fit map to markers bounds
+      setTimeout(() => {
+        map.fitBounds([
+          [7.0985, 80.6210],
+          [7.0910, 80.6305],
+          [7.1002, 80.6150],
+          [7.0960, 80.6250]
+        ], { padding: [50, 50] });
+      }, 100);
+    });
+  </script>
+
+  <script>
+    let lastScroll = 0;
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll <= 0) {
+        // At top of page, always show navbar
+        navbar.classList.remove('hide');
+        return;
+      }
+
+      if (currentScroll > lastScroll && !navbar.classList.contains('hide')) {
+        // Scrolling down
+        navbar.classList.add('hide');
+      } else if (currentScroll < lastScroll && navbar.classList.contains('hide')) {
+        // Scrolling up
+        navbar.classList.remove('hide');
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
+
+</body>
+
+</html>
